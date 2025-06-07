@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>貪食蛇遊戲</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- 使用canvas畫出圖形 -->
+    <canvas
+      id="myCanvas"
+      width="320"
+      height="320"
+      style="background-color: black"
+    ></canvas>
+    <p id="myScore"></p>
+    <p id="myScore2"></p>
+    <!-- 每次點擊都重整頁面 -->
+    <button type="button" id="Start" onclick="location.reload()">
+      開始新遊戲
+    </button>
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,207 @@
+@font-face {
+  font-family: "myFont";
+  src: url("./font/JasonHandwriting1.woff");
+}
+
+/* 清除css default styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* 設定標楷體 */
+  font-family: "myFont", DFkai-sb, sans-serif;
+}
+
+/* 將標題標籤取消粗體效果 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header div.top {
+  padding: 1rem;
+  background-image: url("./images/background.png");
+  background-size: cover;
+}
+
+/* 修改標題字體大小 */
+header div.top h1 {
+  font-size: 2.5rem;
+}
+header div.top h3 {
+  font-size: 1rem;
+}
+
+/* nav */
+header nav {
+  background-color: black;
+}
+
+/* 調整nav的排列，並取消圓點 */
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li {
+  padding: 0.8rem 1.2rem;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  /* hover顏色改變的時間 */
+  transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: yellow;
+}
+.active {
+  color: yellow;
+}
+
+/* 首頁section樣式，當不足700px時自動換行*/
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main.no-flex {
+  display: block;
+}
+
+main section {
+  padding: 1rem;
+}
+
+section.left {
+  flex: 1 1 200px;
+}
+
+section.left img {
+  width: 90%;
+}
+
+section.left h3 {
+  margin-bottom: 1rem;
+}
+
+section.left table {
+  margin-top: 1rem;
+}
+
+section.left table,
+section.left td {
+  padding: 0.25rem;
+}
+
+section.right {
+  flex: 4 1 500px;
+}
+
+section.right h3 {
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+}
+
+/* 所有頁面p標籤設定 */
+p {
+  padding: 0.3rem 0rem;
+}
+
+section.right ul {
+  margin-left: 2rem;
+}
+
+/* 韓國棋院 */
+.player {
+  margin: 2rem;
+  border: 4px solid burlywood;
+  padding: 0.5rem;
+}
+
+div.player h4 {
+  font-size: 1.5rem;
+  color: rgb(0, 90, 91);
+}
+
+div.player h5 {
+  font-size: 1.05rem;
+  color: rgb(6, 120, 120);
+}
+
+/* 日本棋院 */
+div.japan {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+/* 將圖片設定在正中央 */
+div.japan div.image {
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+}
+
+div.image img {
+  width: 100%;
+}
+
+div.japan div.info {
+  flex: 3 1 600px;
+  padding: 2rem;
+}
+
+div.competition {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+div.competition div.text {
+  flex: 5 1 300px;
+  padding: 1rem;
+}
+
+div.competition div.text h3 {
+  font-size: 2rem;
+  color: rgb(12, 122, 92);
+}
+
+#piechart {
+  flex: 1 1 300px;
+}
+
+/* 中國棋院 */
+section.china h3 {
+  font-size: 2rem;
+  color: rgb(12, 122, 92);
+}
+
+section.china table th {
+  background-color: mediumaquamarine;
+  color: white;
+}
+
+/* 海峰棋院 */
+section.taiwan h3 {
+  font-size: 2rem;
+  color: rgb(12, 122, 92);
+}
+
+section.taiwan li {
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}

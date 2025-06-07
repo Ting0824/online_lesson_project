@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shrink example</title>
+    <style>
+      div.container {
+        width: 50vw;
+        height: 300px;
+        border: 2px solid green;
+        display: flex;
+      }
+
+      /* 0，當空間不夠時不會收縮，會維持原本的寬度，最少是500px，最大根據父元素 */
+      div.item {
+        flex: 1 0 500px;
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item"></div>
+    </div>
+  </body>
+</html>
